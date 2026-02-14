@@ -1,0 +1,33 @@
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
+const Cursor = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const moveHandler = (e) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", moveHandler);
+
+    return () => window.removeEventListener("mousemove", moveHandler);
+  }, []);
+
+  return (
+    <motion.div
+      className="pointer-events-none fixed top-0 left-0 z-[9999] w-20 h-20 rounded-full bg-gradient-to-r from-pink-500 to-blue-500 opacity-80 blur-3xl"
+      animate={{
+        x: position.x - 40,
+        y: position.y - 40
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 20
+      }}
+    />
+  );
+};
+
+export default Cursor;
