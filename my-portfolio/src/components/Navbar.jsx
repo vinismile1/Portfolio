@@ -68,7 +68,8 @@ const Navbar = () => {
 
         {/* Resume Button */}
         <a
-          href="/resume.pdf"
+          href="/snehamishra.pdf"
+          download
           target="_blank"
           rel="noopener noreferrer"
           className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-purple-500/30 hover:scale-105 transition duration-300"

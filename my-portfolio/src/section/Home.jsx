@@ -56,7 +56,7 @@ const Home = () => {
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-500/30 to-blue-500/30 blur-xl"></div>
 
             <img
-              src="/sneha.jpeg"
+              src="/mypic.jpeg"
               alt="Sneha Mishra"
               className="relative w-full h-full object-cover rounded-full border border-white/10 shadow-xl"
             />
@@ -80,7 +80,8 @@ const Home = () => {
             </p>
 
             <a
-              href="/SNEHA MISHRA Resume.pdf"
+              href="/snehamishra.pdf"
+              download
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-8 px-6 py-2.5 rounded-full border border-purple-500 text-purple-400 hover:bg-purple-600/20 transition duration-300 text-sm"

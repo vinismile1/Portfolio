@@ -25,6 +25,7 @@ const skillCategories = [
     icon: Server,
     skills: [
       "Node.js",
+      "Express.js",
       "Firebase",
       "Prisma"
     ]
